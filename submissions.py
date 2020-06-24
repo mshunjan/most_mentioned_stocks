@@ -9,19 +9,19 @@ class Submissions():
         self.subred = reddit.subreddit(subred) 
  
     def retrieve_submission_text(self):
-        ''' Initializes the submissions instance '''
+        ''' Retrieves the contents for the submission '''
         for submission in self.subred.stream.submissions():
             print(submission.title)
                 
     def retrieve_submission_title(self):
-        ''' Initializes the submissions instance '''
+        ''' Retrieves the title for the submission '''
         for submission in self.subred.stream.submissions():
             print(submission.title)
         
 reddit = praw.Reddit(client_id="58vJL3gF6-Z8bg",
                     client_secret="nxAkxIeEJl8_f32TxA0fiwnVdsk",
                     user_agent="my user agent")
-                    
+
 pennystocks = Submissions('pennystocks')
 
 pennystocks.retrieve_submission_title()  
