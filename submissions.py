@@ -28,6 +28,6 @@ class Submissions():
             print(submission.title)
   
         
-reddit = praw.Reddit(client_id="58vJL3gF6-Z8bg",
-                     client_secret="nxAkxIeEJl8_f32TxA0fiwnVdsk",
+reddit = praw.Reddit(client_id="id",
+                     client_secret="secret",
                      user_agent="my user agent")

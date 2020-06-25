@@ -17,18 +17,3 @@ Requirements
 - User agent
 
 
-
-self.ticker = ticker
-ticker_object = re.compile(self.ticker) 
-
-def retrieve_submission(self, pattern, section):
-    ''' Retrieves the title for the submission '''
-    self.section = section
-    for submission in self.subred.new(limit=100):
-        if self.section == 'title':
-            stock_in_title = ticker_object.search(submission.title)
-            if stock_in_title != None: 
-                print(stock_in_title.group())
-                # print(Submissions.get_date(submission))
-        else:
-            stock_in_text = ticker_object.search(submission.selftext) 
