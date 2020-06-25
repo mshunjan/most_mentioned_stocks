@@ -8,9 +8,11 @@ class Ticker():
         self.pattern = re.compile(pattern)
 
     def find_ticker(self, query):
+        ''' matches ticker regex to query text to return ticker '''
         ticker = self.pattern.search(query)
         if  ticker!= None:
-            print(ticker.group())
-
-
+            return ticker.group()
+        else:
+            return False 
+ 
 
