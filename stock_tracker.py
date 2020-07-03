@@ -9,7 +9,7 @@ def run_tracker():
     ''' Runs stock tracker with Submissions and ticker instances ''' 
     subreddit = Submissions('pennystocks') 
     stock = Ticker()
-    for submission in subreddit.subred.new(limit=100): 
+    for submission in subreddit.subred.new(limit=1000): 
         stock_iter = stock.find_ticker(subreddit.retrieve_submission('title', submission))
         if stock_iter != False:
             count[stock_iter] += 1
